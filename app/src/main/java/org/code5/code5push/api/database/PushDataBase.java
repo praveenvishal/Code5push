@@ -1,4 +1,4 @@
-package org.code5.code5push.push;
+package org.code5.code5push.api.database;
 
 import com.raizlabs.android.dbflow.annotation.Database;
 
@@ -12,5 +12,5 @@ public class PushDataBase
 
     public static final String NAME = "notifications";
 
-    public static final int VERSION = 100;
+    public static final int VERSION = 27;
 }

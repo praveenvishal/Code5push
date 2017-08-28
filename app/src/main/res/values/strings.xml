@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Code5push</string>
+    <string name="app_name">POWER CUT ALERT</string>
+    <string name="hintEmail">Enter Email ID</string>
+    <string name="hintMobile">Enter Mobile Number</string>
+    <string name="hintAccontNo">Enter Electricity Account Number</string>
+    <string name="hintName">Enter Your Name</string>
+    <string name="errorEmail">Email ID  not valid</string>
+    <string name="errorPhone">Mobile Number not valid</string>
+    <string name="errorAccount"> Account Number Not valid</string>
+    <string name="errorName">Error Occurred</string>
+    <string name="emptyEmail">Email Id  required</string>
+    <string name="emptyPhone">Mobile Number required</string>
+    <string name="emptyAccount"> Account Number required</string>
+    <string name="emptyName">Name required</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation drawer</string>
+    <string name="Register">Register</string>
+    <string name="error">Error signing up</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintMessage">Write Your Message</string>
+
 </resources>

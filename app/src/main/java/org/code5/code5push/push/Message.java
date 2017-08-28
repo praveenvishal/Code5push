@@ -4,6 +4,9 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.structure.BaseModel;
+
+import org.code5.code5push.api.database.PushDataBase;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,15 +18,15 @@ import java.util.List;
 public class Message extends BaseModel
 {
     @Column
-    @PrimaryKey
-    int id;
+    @PrimaryKey(autoincrement = true)
+    long id;
 
-    public int getId()
+    public long getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    public void setId(long id)
     {
         this.id = id;
     }
@@ -51,27 +54,28 @@ public class Message extends BaseModel
     @Column
     String date;
 
-
-    public static List<Message> getList()
+    public static List<Message>getMessages()
     {
-        List<Message> messageList = new ArrayList<>();
-        Message msg = new Message();
-        int j=100;
+        List<Message> messages= new ArrayList<Message>();
 
-        for(int i=0;i<100;i++)
+        for(int i =0;i<100;i++)
         {
-            msg.setMessage("Hi This is Code5.Org custom Test message");
-            msg.setId(i++);
-            msg.save();
+            Message msg = new Message();
+            msg.setMessage("This is the test notification sent from of the offic e of push.code5.org");
+            messages.add(msg);
+
+
 
         }
-        messageList = SQLite.select().
-                from(Message.class).queryList();
+        return messages;
 
-        return messageList;
+
+
+
 
 
     }
+
 
 
 }
